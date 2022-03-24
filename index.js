@@ -16,7 +16,8 @@ app.use( express.static('public'));
 app.use(express.json());
 //routes
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/events', require('./routes/events'));
+app.use('/api/urls', require('./routes/urls'));
+app.use('/', require('./routes/redirect'));
 
 
 app.listen(process.env.PORT, ()=>{

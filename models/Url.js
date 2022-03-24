@@ -12,8 +12,7 @@ const URLSchema = Schema({
     },
    user:{
     type: Schema.Types.ObjectId,
-    ref: 'User',
-    required:true
+    ref: 'User'
  }
 });
 URLSchema.method('toJSON', function(){
